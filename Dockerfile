@@ -8,7 +8,7 @@ WORKDIR /app
 COPY requirements.txt /app/
 
 # Install any dependencies
-RUN pip3 install --user -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 # Copy the rest of your application's code
 COPY . /app
