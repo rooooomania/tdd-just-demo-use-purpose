@@ -4,3 +4,6 @@ def calculate_discounted_price(original_price, discount_percentage):
         raise ValueError("Discount percentage must be between 0 and 100")
     discount_amount = (original_price * discount_percentage) / 100
     return original_price - discount_amount
+
+# def calculate_discounted_price(original_price, discount_percentage):
+#     pass
