@@ -21,3 +21,11 @@ def test_calculate_discounted_price_with_invalid_discount():
         calculate_discounted_price(1000, -1)
     with pytest.raises(ValueError):
         calculate_discounted_price(1000, 101)
+
+def test_calculate_discounted_price_with_invalid_price():
+    # 不正な価格でエラーをテスト
+    with pytest.raises(ValueError):
+        calculate_discounted_price(-1, 10)
+    with pytest.raises(ValueError):
+        calculate_discounted_price(1000, -10)
+            
