@@ -7,7 +7,6 @@ UnitX系のテストも、こうしたアプローチととても相性が良い
 ```mermaid
 sequenceDiagram
     participant Client
-    participant Database as DB
 
     Client->>RegisterInv: call(db, product_details, initial_stock)
     RegisterInv->>Register: call(db, product_details)
